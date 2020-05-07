@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create a new Kanban</description>
+   <name>CreateKanban</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3edd8982-7554-45d4-9a2b-1f5c2e61b561</testCaseGuid>
+   <variable>
+      <defaultValue>'test'</defaultValue>
+      <description></description>
+      <id>1cb728bf-6442-4307-9c19-016dc0d62214</id>
+      <masked>false</masked>
+      <name>title</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>List all Kanban in the DB</description>
+   <name>ListOfAllKanban</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b6a8405-e73a-4950-aab0-af413d37e417</testCaseGuid>
+</TestCaseEntity>
