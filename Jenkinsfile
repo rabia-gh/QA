@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/CreationSuite" -apiKey=9064670c-dc19-4ebe-a726-ab1942992943'
+                sh 'katalon-execute.sh -browserType="Web Service" -retry=2 -executionProfile="default" -testSuitePath="Test Suites/CreationSuite"  -apiKey="022bae05-8bc0-4964-899e-da781e8f4e8b" -apiKeyOnPremise=""'
             }
         }
    }
