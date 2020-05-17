@@ -8,7 +8,7 @@ pipeline {
   }
   stage('start backend server') {
   steps {
-    sh 'docker-compose -f server.yml up -d'
+    sh 'docker-compose -f server.yml down '
    }
    }
    }
