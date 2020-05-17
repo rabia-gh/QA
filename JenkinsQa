@@ -10,20 +10,21 @@ pipeline {
    parallel {
      stage('Dev Backend ') {
      steps {
-     job:backend
+     steps {
+      build job: 'backend_pipeline'  
      }
      }
      stage('Dev Frontend ')
           steps {
-     job:frontend
+      build job: 'Frontend'  
      }
      }
      }
-     stage('Test stage') {
+     /*stage('Test stage') {
    parallel {
      stage('Test Backend ') {
      steps {
-     job:backend
+      build job: 'Frontend' 
      }
      }
      stage('Test Frontend ')
@@ -31,7 +32,7 @@ pipeline {
      job:frontend
      }
      }
-     }
+     }*/
    }
    }
    
