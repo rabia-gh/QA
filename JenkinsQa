@@ -6,11 +6,9 @@ pipeline {
     checkout scm
    }
   }
-  stage('start backend server') {
-  steps {
-    sh 'docker-compose -f server.yml down '
-   }
-   }
+  stage('Dev stage') {
+   parallel {
+     stage('Dev Backend ') {
    }
    }
    
