@@ -6,16 +6,15 @@ pipeline {
     checkout scm
    }
   }
-  stage('Dev stage') {
+  stage('Dev') {
    parallel {
      stage('Dev Backend ') {
-     steps {
      steps {
       build job: 'backend_pipeline'  
      }
      }
-     stage('Dev Frontend ')
-          steps {
+     stage('Dev Frontend '){
+     steps {
       build job: 'Frontend'  
      }
      }
