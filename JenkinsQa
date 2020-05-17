@@ -6,7 +6,7 @@ pipeline {
     checkout scm
    }
   }
-  stage('Dev') {
+  stage('Dev stage ') {
    parallel {
      stage('Dev Backend ') {
      steps {
@@ -20,14 +20,19 @@ pipeline {
      }
      }
      }
-     /*stage('Test stage') {
+    stage('Test stage') {
    parallel {
+   stage('Deploy app ') {
+     steps {
+      sh 'docker-compose -f server.yml up' 
+     }
+     }
      stage('Test Backend ') {
      steps {
       build job: 'Frontend' 
      }
      }
-     stage('Test Frontend ')
+     stage('Test Frontend '){
           steps {
      job:frontend
      }
