@@ -27,7 +27,7 @@ pipeline {
       sh 'docker-compose -f server.yml up' 
      }
      }
-     stage('Test Backend ') {
+     /*stage('Test Backend ') {
      steps {
       build job: 'Frontend' 
      }
