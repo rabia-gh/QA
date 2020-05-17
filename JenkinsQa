@@ -1,0 +1,19 @@
+pipeline {
+ agent any
+ environment {
+     mvnHome = tool name: 'maven', type: 'maven'
+     mvnCMD = "${mvnHome}/bin/mvn"
+ stages {
+  stage('SCM') {
+   steps {
+    checkout scm
+   }
+  }
+  stage('start backend server') {
+  steps {
+    sh 'docker-compose up -d'
+   }
+   }
+   }
+   }
+   
