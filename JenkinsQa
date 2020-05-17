@@ -20,6 +20,7 @@ pipeline {
      }
      }
      }
+     }
      /*stage('Test stage') {
    parallel {
      stage('Test Backend ') {
