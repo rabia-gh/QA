@@ -1,8 +1,5 @@
 pipeline {
  agent any
- environment {
-     mvnHome = tool name: 'maven', type: 'maven'
-     mvnCMD = "${mvnHome}/bin/mvn"
  stages {
   stage('SCM') {
    steps {
