@@ -9,6 +9,29 @@ pipeline {
   stage('Dev stage') {
    parallel {
      stage('Dev Backend ') {
+     steps {
+     job:backend
+     }
+     }
+     stage('Dev Frontend ')
+          steps {
+     job:frontend
+     }
+     }
+     }
+     stage('Test stage') {
+   parallel {
+     stage('Test Backend ') {
+     steps {
+     job:backend
+     }
+     }
+     stage('Test Frontend ')
+          steps {
+     job:frontend
+     }
+     }
+     }
    }
    }
    
